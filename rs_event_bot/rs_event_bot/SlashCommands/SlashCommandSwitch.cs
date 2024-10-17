@@ -12,6 +12,13 @@ namespace discord_bot_burnerplate_build_1.SlashCommands
             _handlers = new SlashCommandhandlers();
         }
 
+        /// <summary>
+        /// Handles the calls for all / commands 
+        /// </summary>
+        /// <param name="command"></param>
+        /// <param name="connection"></param>
+        /// <param name="guildId"></param>
+        /// <param name="client"></param>
         public async Task SlashCommandHandler(SocketSlashCommand command, NpgsqlConnection connection, ulong guildId, DiscordSocketClient client)
         {
             switch (command.Data.Name)

@@ -29,6 +29,7 @@ class Program
         string token = appSettings.Token;
         string connectionString = appSettings.ConnectionString;
 
+        
         _client = new DiscordSocketClient();
         _slashCommandSwitch = new SlashCommandSwitch();
         _commandInitialization = new CommandInitialization.CommandInitialization();
