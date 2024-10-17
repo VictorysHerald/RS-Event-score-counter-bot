@@ -48,7 +48,7 @@ CREATE TABLE DiscordUser_RsRun
 );
 ```
 
-### Necessar NuGet packages to run the bot (ensure they are installed in the project):
+### Necessary NuGet packages to run the bot (ensure they are installed in the project):
 Discord.Net (3.16.0)
 Microsoft.Extensions.Configuration (8.0.0)
 Microsoft.Extensions.Configuration.Json (8.0.1)
