@@ -39,3 +39,4 @@ C:\Users\Maciek\Desktop\dsc bt\rs_event_bot\rs_event_bot\rs_event_bot\obj\Debug\
 C:\Users\Maciek\Desktop\dsc bt\rs_event_bot\rs_event_bot\rs_event_bot\obj\Debug\net8.0\rs_event_bot.pdb
 C:\Users\Maciek\Desktop\dsc bt\rs_event_bot\rs_event_bot\rs_event_bot\obj\Debug\net8.0\rs_event_bot.genruntimeconfig.cache
 C:\Users\Maciek\Desktop\dsc bt\rs_event_bot\rs_event_bot\rs_event_bot\obj\Debug\net8.0\ref\rs_event_bot.dll
+C:\Users\Maciek\Desktop\dsc bt\rs_event_bot\rs_event_bot\rs_event_bot\obj\Debug\net8.0\rs_event_bot.sourcelink.json

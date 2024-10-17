@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("rs_event_bot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0a1f3bbf16f38545f0e867587aa330b627f2b10")]
 [assembly: System.Reflection.AssemblyProductAttribute("rs_event_bot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("rs_event_bot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

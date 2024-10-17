@@ -9,4 +9,5 @@ public interface ISlashCommandhandlers
     public Task HandleLogRsRunCommand(SocketSlashCommand command, NpgsqlConnection connection);
     public Task HandleShowLeaderboardCommand(SocketSlashCommand command, NpgsqlConnection connection, ulong guildId, DiscordSocketClient client);
     public Task HandleRemoveRsRunCommand(SocketSlashCommand command, NpgsqlConnection connection);
+    public Task HandleRemoveRsRunHistory(SocketSlashCommand command, NpgsqlConnection connection);
 }

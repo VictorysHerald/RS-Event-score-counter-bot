@@ -403,4 +403,43 @@ public class SlashCommandhandlers : ISlashCommandhandlers
 
         await command.FollowupAsync(embed: showRemoveRsRunMessage.Build());
     }
+
+    /// <summary>
+    /// Handles the call of /remove-rs-run-history command when used, removes all data from the database
+    /// </summary>
+    /// <param name="command"></param>
+    /// <param name="connection"></param>
+    public async Task HandleRemoveRsRunHistory(SocketSlashCommand command, NpgsqlConnection connection)
+    {
+        command.DeferAsync();
+        
+        // removes all data associated with RS event from the database
+        await using (var removeRsRunData = new NpgsqlCommand(
+                         "DELETE FROM rsrun WHERE 1 = 1", connection))
+        {
+            await removeRsRunData.ExecuteNonQueryAsync();
+        }
+
+        await using (var removeDiscordUserData = new NpgsqlCommand("DELETE FROM discorduser WHERE 1 = 1", connection))
+        {
+            await removeDiscordUserData.ExecuteNonQueryAsync();
+        }
+
+        await using (var removeDiscordUser_RsRunData = new NpgsqlCommand(
+                         "DELETE FROM discorduser_rsrun WHERE 1 = 1", connection))
+        {
+            await removeDiscordUser_RsRunData.ExecuteNonQueryAsync();
+        }
+
+        // creates a response message
+        string removeRsRunHistoryMessage = "All RS runs have been removed";        
+        
+        var removeRsRunHistoryWarningMessaege = new EmbedBuilder()
+            .WithTitle("Remove RS Run History")
+            .WithDescription(removeRsRunHistoryMessage)
+            .WithColor(Color.Red)
+            .WithCurrentTimestamp();
+        
+        await command.FollowupAsync(embed: removeRsRunHistoryWarningMessaege.Build(), ephemeral: true);
+    }
 }

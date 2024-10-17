@@ -7,6 +7,11 @@ namespace discord_bot_burnerplate_build_1.CommandInitialization;
 
 public class CommandInitialization : ICommandInitialization
 {
+    /// <summary>
+    /// Initializes the building process of all / commands
+    /// </summary>
+    /// <param name="guildId"></param>
+    /// <param name="_client"></param>
     public async Task Client_Ready(ulong guildId, DiscordSocketClient _client)
     {
         await BuildHelpCommand(guildId, _client);
@@ -15,6 +20,11 @@ public class CommandInitialization : ICommandInitialization
         await BuildRemoveRsRunCommand(guildId, _client);
     }
 
+    /// <summary>
+    /// Builds the /help command
+    /// </summary>
+    /// <param name="guildId"></param>
+    /// <param name="_client"></param>
     public async Task BuildHelpCommand(ulong guildId, DiscordSocketClient _client)
     {
         var helpGuildCommand = new SlashCommandBuilder()
@@ -30,7 +40,12 @@ public class CommandInitialization : ICommandInitialization
             Console.WriteLine(json);
         }
     }
-
+    
+    /// <summary>
+    /// Builds the /log-rs-run command
+    /// </summary>
+    /// <param name="guildId"></param>
+    /// <param name="_client"></param>
     public async Task BuildLogRsRunCommand(ulong guildId, DiscordSocketClient _client)
     {
         var logRsRunCommand = new SlashCommandBuilder()
@@ -77,6 +92,11 @@ public class CommandInitialization : ICommandInitialization
         }
     }
 
+    /// <summary>
+    /// Builds the /show-leaderboard command
+    /// </summary>
+    /// <param name="guildId"></param>
+    /// <param name="_client"></param>
     public async Task BuildShowLeaderboardCommand(ulong guildId, DiscordSocketClient _client)
     {
         var showRsRunsCommand = new SlashCommandBuilder()
@@ -93,6 +113,11 @@ public class CommandInitialization : ICommandInitialization
         }
     }
 
+    /// <summary>
+    /// Builds the /remove-rs-run command
+    /// </summary>
+    /// <param name="guildId"></param>
+    /// <param name="_client"></param>
     public async Task BuildRemoveRsRunCommand(ulong guildId, DiscordSocketClient _client)
     {
         var removeRsRunCommand = new SlashCommandBuilder()
@@ -107,6 +132,28 @@ public class CommandInitialization : ICommandInitialization
         catch (HttpException exception)
         {
             var json = JsonConvert.SerializeObject(exception.Errors, Formatting.Indented);
+            Console.WriteLine(json);
+        }
+    }
+
+    /// <summary>
+    /// Builds the /remove-rs-run-history command
+    /// </summary>
+    /// <param name="guildId"></param>
+    /// <param name="_client"></param>
+    public async Task BuildRemoveRsRunHistory(ulong guildId, DiscordSocketClient _client)
+    {
+        var removeRsRunHistoryCommand = new SlashCommandBuilder()
+            .WithName("remove-rs-run-history")
+            .WithDescription("removes a history of all RS runs");
+
+        try
+        {
+            await _client.Rest.CreateGuildCommand(removeRsRunHistoryCommand.Build(), guildId);
+        }
+        catch (HttpException e)
+        {
+            var json = JsonConvert.SerializeObject(e.Errors, Formatting.Indented);
             Console.WriteLine(json);
         }
     }
