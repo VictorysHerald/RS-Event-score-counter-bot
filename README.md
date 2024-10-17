@@ -2,9 +2,9 @@
 
 ### Getting Started
 
-To run the bot, you will need to provide an `appsettings.json` file in the following location:\n
-\rs_event_bot\rs_event_bot\bin\Debug\net8.0\n
-This file should contain your server (guild) ID, bot token, and PostgreSQL database connection details.\n
+To run the bot, you will need to provide an `appsettings.json` file in the following location:<br>
+\rs_event_bot\rs_event_bot\bin\Debug\net8.0<br>
+This file should contain your server (guild) ID, bot token, and PostgreSQL database connection details.<br>
 
 ### `appsettings.json` Structure:
 ```json
