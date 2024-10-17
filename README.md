@@ -1,7 +1,7 @@
 # RS Event Bot
 
 ### Description
-This bot was created in order to work on a single server at a time as a simple and quick solution for anyone who wants to have a way of logging their members' scores and doesn't want to create a new bot from the ground up. It is means as a simple solution with basic functionalities to support oranization of RS Events on your own Discord server<br>
+This bot was created in order to work on a single server at a time as a simple and quick solution for anyone who wants to have a way of logging their members' scores and doesn't want to create a new bot from the ground up. It is meant as a simple solution with basic functionalities to support oranization of RS Events on your own Discord server<br>
 
 
 ### Getting Started
