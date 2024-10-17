@@ -16,9 +16,9 @@ This file should contain your server (guild) ID, bot token, and PostgreSQL datab
   }
 }
 ```
-guildId: The ID of the Discord server (guild) where the bot will operate.
-token: The bot token provided by the Discord developer portal.
-connectionString: Your PostgreSQL database connection details.
+guildId: The ID of the Discord server (guild) where the bot will operate.<br>
+token: The bot token provided by the Discord developer portal.<br>
+connectionString: Your PostgreSQL database connection details.<br>
 
 ### Database Setup
 The bot uses a PostgreSQL database to track Discord users' points and RS event runs. To set up the necessary tables, use the following SQL commands to create them in your PostgreSQL instance:
@@ -48,9 +48,9 @@ CREATE TABLE DiscordUser_RsRun
 );
 ```
 
-### Necessary NuGet packages to run the bot (ensure they are installed in the project):
-Discord.Net (3.16.0)
-Microsoft.Extensions.Configuration (8.0.0)
-Microsoft.Extensions.Configuration.Json (8.0.1)
-Microsoft.Extensions.Options.ConfigurationExtensions (8.0.0)
-Npgsql (8.0.5)
+### Necessary NuGet packages to run the bot (ensure they are installed in the project):<br>
+Discord.Net (3.16.0)<br>
+Microsoft.Extensions.Configuration (8.0.0)<br>
+Microsoft.Extensions.Configuration.Json (8.0.1)<br>
+Microsoft.Extensions.Options.ConfigurationExtensions (8.0.0)<br>
+Npgsql (8.0.5)<br>
