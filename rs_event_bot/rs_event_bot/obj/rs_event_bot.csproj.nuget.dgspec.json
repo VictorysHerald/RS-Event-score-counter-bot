@@ -1,0 +1,88 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Maciek\\Desktop\\dsc bt\\rs_event_bot\\rs_event_bot\\rs_event_bot\\rs_event_bot.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Maciek\\Desktop\\dsc bt\\rs_event_bot\\rs_event_bot\\rs_event_bot\\rs_event_bot.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Maciek\\Desktop\\dsc bt\\rs_event_bot\\rs_event_bot\\rs_event_bot\\rs_event_bot.csproj",
+        "projectName": "rs_event_bot",
+        "projectPath": "C:\\Users\\Maciek\\Desktop\\dsc bt\\rs_event_bot\\rs_event_bot\\rs_event_bot\\rs_event_bot.csproj",
+        "packagesPath": "C:\\Users\\Maciek\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Maciek\\Desktop\\dsc bt\\rs_event_bot\\rs_event_bot\\rs_event_bot\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Maciek\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Discord.Net": {
+              "target": "Package",
+              "version": "[3.16.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
