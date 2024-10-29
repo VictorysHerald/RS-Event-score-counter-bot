@@ -9,5 +9,5 @@ public interface ICommandInitialization
     public Task BuildLogRsRunCommand(ulong guildId, DiscordSocketClient _client);
     public Task BuildShowLeaderboardCommand(ulong guildId, DiscordSocketClient _client);
     public Task BuildRemoveRsRunCommand(ulong guildId, DiscordSocketClient _client);
-    public Task BuildRemoveRsRunHistory(ulong guildId, DiscordSocketClient _client);
+    public Task BuildRemoveRsRunHistoryCommand(ulong guildId, DiscordSocketClient _client);
 }

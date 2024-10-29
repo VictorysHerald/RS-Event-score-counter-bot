@@ -35,6 +35,9 @@ namespace discord_bot_burnerplate_build_1.SlashCommands
                 case "remove-rs-run":
                     await _handlers.HandleRemoveRsRunCommand(command, connection);
                     break;
+                case "remove-rs-run-history":
+                    await _handlers.HandleRemoveRsRunHistory(command, connection);
+                    break;
             }
         }
     }

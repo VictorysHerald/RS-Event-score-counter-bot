@@ -18,6 +18,7 @@ public class CommandInitialization : ICommandInitialization
         await BuildLogRsRunCommand(guildId, _client);
         await BuildShowLeaderboardCommand(guildId, _client);
         await BuildRemoveRsRunCommand(guildId, _client);
+        await BuildRemoveRsRunHistoryCommand(guildId, _client);
     }
 
     /// <summary>
@@ -141,7 +142,7 @@ public class CommandInitialization : ICommandInitialization
     /// </summary>
     /// <param name="guildId"></param>
     /// <param name="_client"></param>
-    public async Task BuildRemoveRsRunHistory(ulong guildId, DiscordSocketClient _client)
+    public async Task BuildRemoveRsRunHistoryCommand(ulong guildId, DiscordSocketClient _client)
     {
         var removeRsRunHistoryCommand = new SlashCommandBuilder()
             .WithName("remove-rs-run-history")
